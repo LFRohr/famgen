@@ -1,0 +1,4 @@
+<% render "partials/userinfo" %>
+<% render "partials/navbar" %>
+<%= yield %>
+<% render "partials/footer" %>

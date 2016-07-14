@@ -1,23 +1,16 @@
 class FamgenController < ApplicationController
-  
-layout false
+
+	layout false
 
   def index
-  	#render('hello')
+  	#default action opens landing page
   end
 
-  def hello
-  	#render('index')
-  	@array = [1,2,3,4,5]
-  	@id = params['id'].to_i
-  	@page = params[:page].to_i
+  def switchboard
+  	render('switchboard')
   end
 
-  def other_hello
-  	redirect_to(:controller => 'famgen', :action => 'index')
-  end
-
-  def lynda
-  	redirect_to("http://Lynda.com")
+  def pages
+    render('pages/more_switchboard')
   end
 end

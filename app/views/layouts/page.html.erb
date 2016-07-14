@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Famgen  | <%= @page_title || "Page Title" %></title>
+
+  </head>
+
+  <body>
+  <div id="header">
+  	<h1>Page Header</h1>
+   </div>
+   <div id = "main">
+   		<div id="content">
+   			<%= yield %>
+   		</div>
+   </div>
+   <div id="footer">
+   		<p>id="contact_admin">Footer message</p>
+   	</div>
+  </body>
+</html>

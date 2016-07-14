@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Famgen  | <%= @page_title || "Admin" %></title>
+
+  </head>
+
+  <body>
+  <div id="header">
+  	<h1>Family Genealogy Admin</h1>
+   </div>
+   <div id = "main">
+   		<div id="content">
+   			<%= yield %>
+   		</div>
+   </div>
+   <div id="footer">
+   		<p>id="copyright">&copy; lynda.com / Larry Rohr></p>
+   	</div>
+  </body>
+</html>

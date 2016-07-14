@@ -5,13 +5,13 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: postgresql
+  adapter: sqlite3 #postgresql
   pool: 5
   timeout: 5000
 
 development:
   <<: *default
-  database: db/development.postgresql
+  database: sqlite3 #db/development.postgresql
   username: lfrohr
   password: password
 

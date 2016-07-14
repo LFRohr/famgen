@@ -1,79 +1,95 @@
 
-<a href="/famgen/hello">Hello page 1</a><br />
-<%= link_to('Hello page 2', {:action => 'hello'}) %><br />
-
-<%= link_to('Hello wih parameters', {:action => 'hello', :page => 5, :id => 20}) %>
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>Famgen</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag '/favicon.ico' %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
   </head>
 
   <body>
+ 
+    </body>
 
-  <h1 class="text-center"><%=image_tag("famgen_logo.png", alt: "Logo", :size => "100x100")%>Our Family Genealogy Website 
-  </h1>
-    
-  <hr>
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-xs-3">
+      </div>
+      <div class="col-xs-1">
+        <img src="/myimages/famgen_logo.png" alt="image" width="150" height="150"/>
+      </div>
+      <div class="col-xs-4">
+      <h1 class="text-left">Our Family Genealogy Website <br><small>(nuestra página web genealogía de la familia)</small></h1>
+      </div>
+      <div class="col-xs-4">
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
 
     <!--<div id="main-container" class="container-fluid">-->
     <div id="main-container" class="container">
       <div class="row">
         <div id="sidebar" class="col-xs-3">
           <!-- sidebar content -->
-           <p>Login:</p>
+           <p>Login (Iniciar sesión):</p>
           <form role="form">
             <div class="form-group">
-              <label for="email">Email</label>
+              <label for="email">Email (Correo electrónico):</label>
               <input type="text" id="email" name="email" class="form-control" />
             </div>
             <div class="form-group">
-              <label for="password">Password</label>
+              <label for="password">Password (Contraseña):</label>
               <input type="password" id="password" name="password" class="form-control" />
             </div>
 
-            <input type="submit" value="Login" />
-            <input type="button" value="Cancel" />
+            <input type="submit" value="Login (iniciar sesión)" />
+            <br />
+            <%= link_to('Forgot Password (Olvidó contraseña)', {:action => 'switchboard'}) %>
           </form>
 
           <hr>
-          <p>Forgot Password</p>
+          
+          <p>Hits (Golpes): 12.345</p>
+
+          <%= link_to('Switchboard', {:action => 'switchboard'}) %>
 
           </div>
           <div id="main-content" class="col-xs-9">
             <!--  main content -->
-            <h3>Hello Family Member!</h3>
-            <h4>Welcome to OUR FAMILY GENEALOGY WEBSITE created exclusively for the extended families (descendants, siblings, ancestors and all other relatives) of <em>Larry Francis Rohr, Gloria Arminda Medina and Paul Webb Erekson.</em> The purpose of this website is to create a shared library of family records and information where family members can collaborate with each other and collectively maintain a more accurate history and genealogy of these persons. This website is for use by any family member; however, an active user account (with password and email) is required to login.</h4>
+            <h3>Hello/Hola,</h3>
+            <h4>Welcome to Our Family Genealogy Website created exclusively for the extended families (descendants, siblings, ancestors and all other relatives) of <em>Larry Francis <strong>ROHR</strong>, Gloria Arminda <strong>MEDINA</strong> and Paul Webb <strong>EREKSON</strong>.</em> The purpose of this website is to create a shared library of family records and information where family members can collaborate with each other and collectively maintain a more accurate history and genealogy of these persons.</h4> 
 
-            <h4>[Note: A user account is available for each member of the family who desires to have one (at no charge). You may continue by entering your user account information inside the login panel on the left, or if you do not already have a user account you can request one along with a starter password from the Administrator by clicking the "Request User Account" button below.]</h4>
+            <h4>A user account (with password and current email) is required to login to this site. If you do not already have a user account you are invited to request one from the Administrator by clicking the "Request User Account" link below.</h4>
 
             <form role="form">
-              <input type="button" value="Request User Account" />
+              <%= link_to('Request User Account (cuenta la petición del usuario)', {:action => 'switchboard'}) %>
             </form>
+
+            <br/>
 
             <h3>Change Language (Cambiar idioma)</h3>
 
             <div class="form-group">
               <div class="col-sm-8">
                 <div class="radio">
-                  <label class="radio-inline">
-                  <input type="radio" name="languageRadios" id="enLanguage" value="english" checked>
-                  English
-                  </label>
-                </div>
-                <div class="radio">
-                  <label class="radio-inline">
-                  <input type="radio" name="languageRadios" id="spLanguage" value="spanish">
-                  Español
-                  </label>
-                  </div>
+                  <label class="radio-inline"><input type="radio" name="languageRadios" id="enLanguage" value="english" checked><img src="/myimages/american_flag.png" alt="american flag" height: class="img-responsive" width="75" height="50">English</label>
+                
+                  <label class="radio-inline"><input type="radio" name="languageRadios" id="spLanguage" value="spanish"><img src="/myimages/peru_flag.png" alt="peru flag" height: class="img-responsive" width="75" height="40">Español</label>
                 </div>
               </div>
+            </div>
 
           </div>
       </div>
