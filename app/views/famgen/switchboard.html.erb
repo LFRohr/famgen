@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<meta charset="UTF-8">
-    <title>Famgen</title>
-    <%= csrf_meta_tags %>
+    
+    <meta charset="utf-8">
+
+    <!--<%= csrf_meta_tags %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
+
+    %>-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/mystyles.scss" type="text/css" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	
-<style type="text/css">
-	.bs-example{
-    	margin: 20px;
-    }
-</style>
+    <link rel="icon" href="/favicon.png">
+    <link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <!-- <link href="//fonts.googleapis.com/css?family=Lato:400|Inconsolata" rel="stylesheet" type="text/css"> -->
 
+    <title>Home</title>
 
   </head>
 
   <body>
   <%= render "partials/userinfo" %>
   
-  <h1 class="text-center"><img src="/myimages/famgen_logo.png" alt="image" width="75" height="75"/>Navigation Switchboard 
-  </h1>
-  
-  <%= render "partials/navbar" %>
-  
-  <hr>
+
+<div class="row">
+      <div class="col-xs-3">
+      </div>
+      <div class="col-xs-1">
+        <img src="/myimages/famgen_logo.png" alt="image" width="75" height="75"/>
+      </div>
+      <div class="col-xs-4">
+      <h1 class="text-left">Family Genealogy Home Page <br><small>(Página de Inicio Genealogía de la Familia)</small></h1>
+      </div>
+      <div class="col-xs-4">
+      </div>
+    </div>
+
+
+
+
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6 text-center">
+      <div class = "text-center">
+      <%= render "partials/navbar" %>
+      </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
 
   <!--<div id="main-container" class="container-fluid">-->
     <div id="main-container" class="container">
@@ -41,8 +70,12 @@
     
         <div id="main-content" class="col-xs-8">
             <!--  main content -->
-            <h3 class="text-center">Bulletin Board</h3>
-            <h4 class="text-center">Bulletin Board content goes here.</h4>
+            <h3 class="text-center">Bulletin Board (Tablón de Anuncios)</h3>
+            <!--<h4 class="text-center">Bulletin Board content goes here.</h4>-->
+            <!--<article style = " outline: #708090 dotted;">-->
+            <article class= "bulletin">
+              <p class="text-center">Bulletin Board content goes here.</p>
+            </article>
 
             <div class="row">
               <div id="main-content" class="col-xs-6">

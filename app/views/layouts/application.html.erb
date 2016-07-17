@@ -1,7 +1,15 @@
+<!--This is the default layout used by Rails for all templates in a controller-->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Famgen</title>
+    <!--<title>Family Genealogy Website</title>-->
+    <title><%= full title(yield(:title)) %></title>
+	<%= stylesheet link tag "application", media: "all" %>
+	<%= javascript include tag "application" %>
+	<%= csrf meta tags %>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
   </head>
 

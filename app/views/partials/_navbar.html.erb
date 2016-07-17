@@ -1,118 +1,113 @@
+<div class = "btn-toolbar">-
 
-
-<div class="row">
-  <div class="col-xs-3">
+  <div class="dropdown">
+    <!--<button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" style = "margin: 0px 5px 0px 0px;">BACK</button>-->
+    <!--<button class="btn btn-primary btn-sm" type="button" style = "margin: 0px 5px 0px 0px;">BACK</button>-->
+    <button class="btn btn-primary btn-sm" type="button" style = "margin: 0px 2px 0px 0px;"><img src="/myimages/back2.png" alt="BACK" width="20" height="20" /></button>
   </div>
-  <div class="col-xs-6">
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        
-        <ul class="nav navbar-nav">
-          <li class="active"><a <%= link_to 'Back', 'javascript:history.go(-1);' %>>Back</a></li>
 
+  <div class="dropdown">
+    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" style = "margin: 0px 2px 0px 2px;">
+    <img src="/myimages/help.png" alt="Help" width="20" height="20" />&nbsp&nbsp&nbsp<span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">Help - This Page (Ayuda -Esta Página)</a></li>
+      <li><a tabindex="-1" href="#">Help "How To" ("Ayuda Cómo")</a></li>
+    </ul>
+  </div>
 
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">This Page</a></li>
-              <li><a href="#">How To</a></li>
-            </ul>
-          </li>
+  <div class="dropdown">
+    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" style = "margin: 0px 2px 0px 2px;">1: Photos (Fotos)
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">1.1 Photos Library (Biblioteca de Fotos)</a></li>
+      <li><a tabindex="-1" href="#">1.2 Albums (álbumes)</a></li>
+      <li><a tabindex="-1" href="#">1.3 Home Videos (Videos Caseros)</a></li>
+      </li>
+    </ul>
+  </div>
 
-
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">1: Photos
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">1.1: Photos Library</a></li>
-              <li><a href="#">1.2: Albums</a></li>
-              <li><a href="#">1.3: Home Videos</a></li>
-            </ul>
-          </li>
-
-          <!--<li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">2: People
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">2.1: Individuals</a></li>
-              <li><a href="#">2.2: Households</a></li>
-              <li><a href="#">2.3: Directory</a></li>
-                 <li class="dropdown-submenu">
-                    <a tabindex="-1" href="#">Lists</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Birthdays</a></li>
-                        <li><a href="#">Anniversaries</a></li>
-                      </ul>
-              </li>
-            </ul>
-          </li>-->
-
-          <ul class="dropdown-menu">
-      <li><a tabindex="-1" href="#">HTML</a></li>
-      <li><a tabindex="-1" href="#">CSS</a></li>
+  <div class="dropdown">
+    <div class="dropdown">
+    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" style = "margin: 0px 2px 0px 2px;">2: People (Gente)
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">2.1 Individuals/Journals (Individuos/Journas)</a></li>
+      <li><a tabindex="-1" href="#">2.2 Marriages (Los Matrimonios)</a></li>
       <li class="dropdown-submenu">
-        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+        <a class="test" tabindex="-1" href="#">2.3: DIRECTORIES (DIRECTORIOS) <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
-          <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+          <li><a tabindex="-1" href="#">2.3.1 Phone Directory (Directorio Telefonico)</a></li>
+          <li><a tabindex="-1" href="#">2.3.2 Birthdays (Cumpleaños)</a></li>
+          <li><a tabindex="-1" href="#">2.3.3 Anniversaries (Aniversarios)</a></li>
           <li class="dropdown-submenu">
-            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <a class="test" href="#">2.4: LOOKUPS (Las Búsquedas) <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">3rd level dropdown</a></li>
-              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">2.4.1 LDS Members (Los Miembros de LDS)</a></li>
+              <li><a href="#">2.4.2 Languages (Idiomas)</a></li>
+              <li><a href="#">2.4.3 Missions (Misiones)</a></li>
             </ul>
           </li>
         </ul>
       </li>
     </ul>
+  </div>
 
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">2: People
-            <span class="caret"></span></a>
+  <div class="dropdown">
+    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" style = "margin: 0px 2px 0px 2px;">3: Genealogy (Genealogía)
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">3.1 Research Log</a></li>
+      <li><a tabindex="-1" href="#">3.2 Attachments</a></li>
+      <li><a tabindex="-1" href="#">3.3 Correspondence</a></li>
+      <li><a tabindex="-1" href="#">3.4 Temples</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">3.5: PLACES <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">3.5.1 Countries</a></li>
+          <li><a tabindex="-1" href="#">3.5.2 States</a></li>
+          <li><a tabindex="-1" href="#">3.5.3 Counties</a></li>
+          <li><a tabindex="-1" href="#">3.5.4 Citeies/Townships</a></li>
+          <li><a tabindex="-1" href="#">3.5.5 Courthouses</a></li>
+          <li><a tabindex="-1" href="#">3.5.6 Parishes</a></li>
+          <li><a tabindex="-1" href="#">3.5.7 Cemeteries</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">3.6: SOURCES <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">2.1: Individuals</a></li>
-              <li><a href="#">2.2: Households</a></li>
-              <li><a href="#">2.3: Directory</a></li>
-                 <li class="dropdown-submenu">
-                    <a tabindex="-1" href="#">Lists</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Birthdays</a></li>
-                        <li><a href="#">Anniversaries</a></li>
-                      </ul>
-                  </li>
-            </ul>
-          </li>
-
-
-
-
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">3: Research
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">3.1: Research Log</a></li>
-              <li><a href="#">3.2: Correspondence</a></li>
-              <li><a href="#">3.3: Attachments</a></li>
-              <li><a href="#">3.4: Locations</a></li>
-              <li><a href="#">3.5: Sources</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Misc
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Recipes</a></li>
-              <li><a href="#">Movies</a></li>
-              <li><a href="#">Change Password</a></li>
-              <li><a href="#">Admin Menu</a></li>
+              <li><a href="#">3.6.1 US Census</a></li>
             </ul>
           </li>
         </ul>
-      </div>
-    </nav>
+      </li>
+    </ul>
   </div>
-  <div class="col-xs-3">
+
+  <div class="dropdown">
+    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" style = "margin: 0px 0px 0px 2px;">4: Misc.
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">4.1 Recipes</a></li>
+      <li><a tabindex="-1" href="#">4.2 Feature Movies</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">4.3: ADMINISTRATIVE <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">4.3.1 Change Password</a></li>
+          <li><a tabindex="-1" href="#">4.3.2 Request Permission Upgrade</a></li>
+          <li><a tabindex="-1" href="#">4.3.3 Report Problem</a></li>
+          <li><a tabindex="-1" href="#">4.3.4 Admin Menu</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
+
 </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
