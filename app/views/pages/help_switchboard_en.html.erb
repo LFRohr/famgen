@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Help Switchboard</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+
+  <%= render "partials/userinfo" %>
+  <%= render "partials/navbar" %>
+
+  <div>
+    <h1 class="text-center">Help This Page for<br><small>Table of Contents</small></h1>
+    <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 75%;" />
+  </div>
+
+  <div id="main-content">
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8 text-center">
+          <p>The Table of Contents is the lauching pad for the website as it is the first page you land on after loging in and all other areas of the website are available from here. This help page gives an outline of the website and explains the options found on the navigation bar above.</p>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+  </div>
+
+  <div>
+    <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 75%;" />
+  </div>
+
+  <div id="main-content">
+	 <div class="row">
+      <div class="col-md-2">
+      </div>
+
+    	<div class="col-md-8">
+      <h3>&nbspDouble Back Arrows<img src="/myimages/back.png" alt="BACK" style = "float:left; width="20" height="20" /></h3>
+          <p>The double back arrows are provided as an easy method of navigating back to the Table of Contents.</p>
+
+    		<h3>&nbspSingle Back Arrow<img src="/myimages/single_back.png" alt="BACK" style = "float:left; width="20" height="20" /></h3>
+    		  <p>The single back arrow is provided as an easy method of navigating back to the previous page. </p>
+
+        <h3>&nbspHelp<img src="/myimages/help.png" alt="Help" style = "float:left; width="20" height="20" /></h3>
+          <p>There are two forms of help available with this website. The first one called "Help This Page" is designd to help you understand the purpose and functionality of the page you are curently on. If you get stuck on a page or don't yet understand what the page is used for this is a good place to go.</p>
+
+          <p>The second form of avilable help is the "How To" section. Here you ca lookup instructions on how to perform various functions such as add or delete a record, create a sorted list of records, print a report, etc. A proficiency in using theis section is required for users to have their permissions upgraded from "read" to "change".</p>
+    
+        <h3>Photos</h3>
+          <h4><u>Photos Library</u></h4>
+          <p>Each user photo is represented by a coresponding photo record that includes all the information about the photo: owner, date taken, caption, etc. Whenever a photo is added to a person's record or included in an album, an associated link is made to the correct photo recoprd id. Consequently, a photo can not be used in this database unless a correlating photo record has been created. In fact, controls are set such that you can not create one without the other. </p>
+
+          <p>You are the owner of each photo you add to the database and only you can delete it.</p>
+
+          <h4><u>Albums</u></h4>
+          <p>Albums are collections of photos organized by Album Titles. You can create an unlimited number of your own personal albums and you can add the same photo to as many different albums as you like. Others can add their photos to your albums (e.g. children can add to their parents album) but only you can unink a photo that you linked to an album</p>
+
+          <h4><u>Home Videos</u></h4>
+          <p>Home videos is a future feature of the website which has not yet been created.</p>
+
+        <h3>People</h3>
+          <h4><u>Individuals</u></h4>
+          <p>Each person that appears in this database must have a personal record which is identified with a PIN (Personal Identification Number). This record contains all the information being tracked on that individual. If you want to add a child to a family or add a spouse to a marriage that individual must first have a personal record in the database.</p>
+
+          <h4><u>Marriages</u></h4>
+          <p>The concept of a marriage includes the combination of two individuals joined together, whether they are actually married or not thus forming a joint household. This can be compared to single adult individual who would represent a single household in the family phone directory. Marriage records are used in the genealogy section to form families where children are linked. Marriage with at least one living spouce become an entry for the family phone directory where phone numbers, address and emails are tracked.</p>
+
+        </div>
+
+        <div class="col-md-2">
+        </div>      
+    </div>
+  </div>
+
+</body>
+</html>

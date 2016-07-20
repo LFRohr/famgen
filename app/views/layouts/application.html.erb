@@ -2,22 +2,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--<title>Family Genealogy Website</title>-->
-    <title><%= full title(yield(:title)) %></title>
-	<%= stylesheet link tag "application", media: "all" %>
-	<%= javascript include tag "application" %>
-	<%= csrf meta tags %>
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+
+  <title>Family Genealogy Website</title>
+  
+
+
 
   </head>
 
-  <body>
+  <body style = "background: url(/myimages/background3.jpg) center center no-repeat; background-size:1920px 1080px;">
 
-    <!-- before yield -->
     <%= yield %>
-    <!-- after yield -->
     
   </body>
 </html>

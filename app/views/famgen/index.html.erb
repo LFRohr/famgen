@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Famgen Website</title>
+    <title>Family Genealogy Website (Página Web Genealogía de la Familia)</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -14,9 +14,9 @@
     <![endif]-->
   </head>
 
-  <body>
- 
-    </body>
+  <!--<body style = "background-color:silver;">-->
+  <!--<body style = "background-image: url(/myimages/background3.jpg) center center no-repeat; background-size:100px 150px;">-->
+  <body style = "background: url(/myimages/background3.jpg) center center no-repeat; background-size:1920px 1080px;">
 
     <br>
     <br>
@@ -28,7 +28,7 @@
         <img src="/myimages/famgen_logo.png" alt="image" width="150" height="150"/>
       </div>
       <div class="col-xs-4">
-      <h1 class="text-left">Our Family Genealogy Website <br><small>(nuestra página web genealogía de la familia)</small></h1>
+      <h1 class="text-left">Our Family Genealogy Website <br><small>(Nuestra Página Web Genealogía de la Familia)</small></h1>
       </div>
       <div class="col-xs-4">
       </div>
@@ -69,9 +69,11 @@
           <div id="main-content" class="col-xs-9">
             <!--  main content -->
             <h3>Hello/Hola,</h3>
-            <h4>Welcome to Our Family Genealogy Website created exclusively for the extended families (descendants, siblings, ancestors and all other relatives) of <em>Larry Francis <strong>ROHR</strong>, Gloria Arminda <strong>MEDINA</strong> and Paul Webb <strong>EREKSON</strong>.</em> The purpose of this website is to create a shared library of family records and information where family members can collaborate with each other and collectively maintain a more accurate history and genealogy of these persons.</h4> 
+            <h4>Welcome to Our Family Genealogy Website created exclusively for the descendants, siblings, ancestors and all other relatives of <em>Larry Francis <strong>ROHR</strong>, Gloria Arminda <strong>MEDINA</strong> and Paul Webb <strong>EREKSON</strong>.</em> The purpose of this website is to create a shared library of family records and information where family members can collaborate with each other and collectively maintain a more accurate history and genealogy of these persons.</h4> 
 
-            <h4>A user account (with password and current email) is required to login to this site. If you do not already have a user account you are invited to request one from the Administrator by clicking the "Request User Account" link below.</h4>
+            <h4>A user account (with password and current email) is required to login to this site. If you are a family member related to one of these extended families and do not already have a user account you are invited to request one from the Administrator by clicking the "Request User Account" link below.</h4> 
+
+            <h4>Please note that this site needs to keep track of each person who is currently logged in so the user's records can be correctly gathered. This is accomplished using a temporary cookie. Therefore, you must have cookies enabled on your computer in able to login.</h4>
 
             <form role="form">
               <%= link_to('Request User Account (cuenta la petición del usuario)', {:action => 'switchboard'}) %>
@@ -79,7 +81,7 @@
 
             <br/>
 
-            <h3>Change Language (Cambiar idioma)</h3>
+            <h3>Change Language (Cambiar Idioma)</h3>
 
             <div class="form-group">
               <div class="col-sm-8">
@@ -97,4 +99,4 @@
 
 
   </body>
-</html>
+

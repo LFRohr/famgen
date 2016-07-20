@@ -24,77 +24,123 @@
     <link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
     <!-- <link href="//fonts.googleapis.com/css?family=Lato:400|Inconsolata" rel="stylesheet" type="text/css"> -->
 
-    <title>Home</title>
+    <title>TOC</title>
 
   </head>
 
   <body>
   <%= render "partials/userinfo" %>
-  
 
-<div class="row">
+    <div class="row">
       <div class="col-xs-3">
       </div>
-      <div class="col-xs-1">
-        <img src="/myimages/famgen_logo.png" alt="image" width="75" height="75"/>
+      <div class="col-xs-6">
+      <h1 class="text-center"><img class="img-responsive pull-left" style="float:right;" src="/myimages/famgen_logo.png" alt="image" width="75" height="75"/>Table of Contents <br><small>(Tabla de Contenido)</small></h1>
+      <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 100%;" />
       </div>
-      <div class="col-xs-4">
-      <h1 class="text-left">Family Genealogy Home Page <br><small>(Página de Inicio Genealogía de la Familia)</small></h1>
-      </div>
-      <div class="col-xs-4">
+      <div class="col-xs-3">
       </div>
     </div>
-
-
-
-
-
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-6 text-center">
-      <div class = "text-center">
-      <%= render "partials/navbar" %>
-      </div>
-    </div>
-    <div class="col-md-3">
-    </div>
-  </div>
 
   <!--<div id="main-container" class="container-fluid">-->
     <div id="main-container" class="container">
+
       <div class="row">
         <div id="sidebar" class="col-xs-2">
           <!-- left sidebar content -->
         </div>
     
-        <div id="main-content" class="col-xs-8">
+        <div class="col-xs-8">
             <!--  main content -->
-            <h3 class="text-center">Bulletin Board (Tablón de Anuncios)</h3>
-            <!--<h4 class="text-center">Bulletin Board content goes here.</h4>-->
-            <!--<article style = " outline: #708090 dotted;">-->
-            <article class= "bulletin">
-              <p class="text-center">Bulletin Board content goes here.</p>
-            </article>
+            <h4 class="text-center" style= "margin-top:0" >Bulletin Board (Tablón de Anuncios)</h4>
+            <form>
+              <textarea class="bg-primary text-center" rows="3" style="width:100%;">1 Jan 2015 - Welcome to the new "Our Famiy Genealogy" website! If you are readng this message it means that your login credentials have worked properly and this website is supported in your browser.</textarea>
+            </form>
 
             <div class="row">
-              <div id="main-content" class="col-xs-6">
-              <h4>I have had a long time interest in family genealogy along with my wife and several other members of our family. This deep-rooted interest stems from our association with the Church of Jesus Christ of Latter-Day Saints, also known as the Mormon Church, which teaches that families are eternal. This "eternal" nature causes us to become more than causually interested in our ancestors and makes us want to discover who they are so we can have baptism and marriage ordinances performed on their behalf by someone with priesthood authority in LDS temples. This then gives our beloved ancestors the opportunity to accept these important ordinances if they choose to do so. So... for many of us doing family research is more than a passtime hobby - it is, instead, an important work!</h4>
+              <div class="col-xs-3">
+                <h4><span><dt>1: Photos (Fotos)</dt></span></h4>
+                <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 75%;" />
+                  <ul class="list-unstyled"> 
+                    <li><a href="person-records.html">1.1: Photos Library (Biblioteca de Fotos)</a></li> 
+                    <li><a href="marriage-records.html">1.2: Albums (álbumes)</a></li> 
+                    <li><a href="ordinances.html">1.3: Home Videos (Videos Caseros)</a></li>
+                    <br> 
+                    <li class= "text-center" style="color:red;"><span><dt><u>NEW USERS <br>(Usuarios Nuevos)</u></dt></span></li>
+                  </ul>
+            
+                  <a href="/pages/getting_started_en"><img src="/myimages/help.png" alt="Help" width="20" height="20" />Getting Started (Empezando)</a>
+                  <br>
+                  <a href="/pages/help_switchboard_en"><img src="/myimages/help.png" alt="Help" width="20" height="20" />Help This Page (Ayudar a Esta Página)</a>
+                  <br>
+                  <a href="/pages/help_howto_en"><img src="/myimages/help.png" alt="Help" width="20" height="20" />How To (Cómo)</a>
+                  <br>
+                  <a href="/pages/sample3"><img src="/myimages/help.png" alt="Help" width="20" height="20" />Sample3</a>
               </div>
-              <div id="main-content" class="col-xs-6">
-              <h4>When my younger sister died I helped go thru several <em>"shoe boxes in the basement"</em> of important and valuable family records (photos, journals, family names, etc.) It then occured to me that I, along with probably many of you other family members have our own <em>"shoeboxes in the basement"</em> of photos and records that are not being shared with others who would have a real interest in them. As I became more involved with organizing my own family records I saw the importance of: 1) Having a means of sharing our <em>"shoeboxes"</em> with other family members, 2) Having a system of collaboration where we can contribute to the completeness and accuracy of the combined family library, and 3) Having a way to preserve these records for future generations. I then decided to construct this website with these basic goals in mind. read <a href="pages/more_switchboard" target="_blank">more...</a></h4>
-              </div>
-              
-            </div>
 
-        </div>
+              <div class="col-xs-3">
+                <h4><span><dt>2: People (Gente)</dt></span></h4>
+                <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 75%;" />
+                  <ul class="list-unstyled"> 
+                    <li><a href="person-records.html">2.1: Individuals/Journals (Individuos/Journas)</a></li> 
+                    <li><a href="marriage-records.html">2.2: Marriages (Los Matrimonios)</a></li> 
+                    <br>
+                    <li>2.3: <u>Directories (Directorios)</u></li>
+                    <li><a href="research-journal.html">&nbsp&nbsp&nbsp2.3.1: Phone Directory (Directorio Telefonico)</a></li> 
+                    <li><a href="sources-menu.html">&nbsp&nbsp&nbsp2.3.2: Birthdays (Cumpleaños)</a></li> 
+                    <li><a href="gen-attachments.html">&nbsp&nbsp&nbsp2.3.3: Anneversaries (Aniversarios)</a></li>
+                    <br>
+                    <li>2.4: <u>Lists (Liza)</u></li>
+                    <li><a href="gen-reports.html">&nbsp&nbsp&nbsp2.4.1: LDS Members (Los Miembros de LDS)</a></li>
+                    <li><a href="gen-reports.html">&nbsp&nbsp&nbsp2.4.2: Languages (Idiomas)</a></li>
+                    <li><a href="gen-reports.html">&nbsp&nbsp&nbsp2.4.3: LDS Missions (Misiones de LDS)</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-xs-3">
+                <h4><span><dt>3: Genealogy</dt></span></h4>
+                <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 75%;" />
+                  <ul class="list-unstyled"> 
+                    <li><a href="person-records.html">3.1: Research Log (Iniciar la Investigación)</a></li> 
+                    <li><a href="marriage-records.html">3.2: Attachments (Archivos Adjuntos)</a></li> 
+                    <li><a href="marriage-records.html">3.3: Correspondence (Correspondencia)</a></li>
+                    <li><a href="marriage-records.html">3.4: Temples (Templos)</a></li>
+                    <li><a href="marriage-records.html">3.5: Reports (Informes)</a></li>
+                    <li><a href="/pages/gen_menu_en"><b>3.6: Gen. Menu (Menú Gen.)</b></a></li>
+                    
+                  </ul>
+              </div>
+
+              <div class="col-xs-3">
+                <h4><span><dt>4: Misc.</dt></span></h4>
+                <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 75%;" />
+                  <ul class="list-unstyled"> 
+                    <li><a href="/pages/getting_started_en"><b>4.1: *Start Here (Empieza Aqui)</b></a></li>
+                    <li><a href="person-records.html">4.2: Calendar (Calendario)</a></li> 
+                    <li><a href="person-records.html">4.3: Recipes (Recetas)</a></li> 
+                    <li><a href="marriage-records.html">4.4: Feature Movies (Movies)</a></li> 
+                    <br>
+                    <li>4.5: <u>Administrative (Administrativo)</u></li>
+                    <li><a href="research-journal.html">&nbsp&nbsp&nbsp4.5.1: Change Password (Cambia la Contraseña)</a></li> 
+                    <li><a href="sources-menu.html">&nbsp&nbsp&nbsp4.5.2: Request Permission Upgrade (Solicitud de Actualización Permiso)</a></li> 
+                    <li><a href="gen-attachments.html">&nbsp&nbsp&nbsp4.5.3: Report Problem (Reportar Problema)</a></li>
+                    <li><a href="gen-attachments.html">&nbsp&nbsp&nbsp4.5.4: User's Choices (Opciones de Usuario)</a></li>
+                    <li><a href="gen-reports.html">&nbsp&nbsp&nbsp4.5.5: Admin Menu (Menú de Administración)</a></li>
+                  </ul>
+              </div>
+
+          </div><!-- end center column-->
+      
+
         <div class="row">
         	<div id="sidebar" class="col-xs-2">
           		<!-- right sidebar content -->
-          	</div>
+          </div>
         </div>
+
       </div>
-    </div>
+    </div><!-- end main div-->
+
     <%= render "partials/footer" %>
   </body>
 </html>

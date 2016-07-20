@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Help Switchboard</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<style>
+body{margin-top:50px;}
+.glyphicon { margin-right:10px; }
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
+</style>
+
+<!--
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})-->
+
+</head>
+<body>
+
+  <%= render "partials/userinfo" %>
+  <%= render "partials/navbar" %>
+
+  <div>
+    <h1 class="text-center">Help (english)<br><small>"How To"</small></h1>
+    <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 50%;" />
+  </div>
+
+  </div><!-- end row #1 div for title-->
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-3">
+            <div class="panel-group" id="accordion">
+                <div role="tabpanel">
+                <h4><u>Click on Group to Open/Close:</u></h4>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-plus">
+                                </span>Add New Records</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-plus text-primary"></span><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Add Photo</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-plus text-success"></span><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Add Person</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-plus text-info"></span><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Add Attachment</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-pencil">
+                                </span>Change Records</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Change Phone Number/Email</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">Change2</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">Change3</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-search">
+                                </span>Filter & View Records</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-search text-primary"></span><a href="#tab7" aria-controls="tab7" role="tab" data-toggle="tab">View 1</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-search text-primary"></span><a href="#tab8" aria-controls="tab8" role="tab" data-toggle="tab">View2</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-search text-primary"></span><a href="#tab9" aria-controls="tab9" role="tab" data-toggle="tab">View3</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-minus">
+                                </span>Delete Records</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-minus text-primary"></span><a href="#tab10" aria-controls="tab10" role="tab" data-toggle="tab">Delete1</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-minus text-primary"></span><a href="#tab11" aria-controls="tab11" role="tab" data-toggle="tab">Delete2</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-minus text-primary"></span><a href="#tab12" aria-controls="tab12" role="tab" data-toggle="tab">Delete3</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><span class="glyphicon glyphicon-link">
+                                </span>Link Records</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-link text-primary"></span><a href="#tab10" aria-controls="tab13" role="tab" data-toggle="tab">Link1</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-link text-primary"></span><a href="#tab11" aria-controls="tab14" role="tab" data-toggle="tab">Link2</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-link text-primary"></span><a href="#tab12" aria-controls="tab15" role="tab" data-toggle="tab">Link3</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"><span class="glyphicon glyphicon-print">
+                                </span>Print Reports</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-print text-primary"></span><a href="#tab10" aria-controls="tab16" role="tab" data-toggle="tab">Print1</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-print text-primary"></span><a href="#tab11" aria-controls="tab17" role="tab" data-toggle="tab">Print2</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-print text-primary"></span><a href="#tab12" aria-controls="tab18" role="tab" data-toggle="tab">Print3</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"><span class="glyphicon glyphicon-hand-right">
+                                </span>Perform Administrative Tasks</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-hand-right text-primary"></span><a href="#tab19" aria-controls="tab19" role="tab" data-toggle="tab">Change Your Password</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-hand-right text-primary"></span><a href="#tab20" aria-controls="tab20" role="tab" data-toggle="tab">Upgrade Your Permissions</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-hand-right text-primary"></span><a href="#tab21" aria-controls="tab21" role="tab" data-toggle="tab">Report a Problem</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-hand-right text-primary"></span><a href="#tab22" aria-controls="tab22" role="tab" data-toggle="tab">Edit a Popup List</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"><span class="glyphicon glyphicon-star">
+                                </span>Miscelaneous</a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-star text-primary"></span><a href="#tab23" aria-controls="tab23" role="tab" data-toggle="tab">Misc1</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-star text-primary"></span><a href="#tab24" aria-controls="tab24" role="tab" data-toggle="tab">Misc2</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-star text-primary"></span><a href="#tab25" aria-controls="tab25" role="tab" data-toggle="tab">Misc3</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="glyphicon glyphicon-star text-primary"></span><a href="#tab26" aria-controls="tab26" role="tab" data-toggle="tab">Misc4</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-9">
+            <div class="well">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab0">
+                        <p>Use this page to find brief instructions on how to perform various tasks on this website. Click on one of the eight "How To" instruction groups at the left to open that group. From there select the specific "How To" instruction you want to view.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab1">
+                        <p>ADD PHOTO: To add new photo to the website - Navigate to 1.1 and click on the "Help This Page" tab in the navigation bar for complete instructions. You will be required to add the photo before you will be able to create the new photo record. Click the Add Photo button and navigate to the location on your computer where the photo is located and select it.</p> 
+
+                        <p>Once you have done this the new photo record form will be enabled and you can complete it. Fill in as many as the fields as you can and be sure to include a descriptive title and caption. Include as many names and dates as you can to help others identify who is in your photo.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab2">
+                        <p>ADD PERSON:</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab3">
+                        <p>Tab3</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab4">
+                        <p>Tab4</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab5">
+                        <p>Tab5</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab6">
+                        <p>Tab6</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab7">
+                        <p>Tab7</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab8">
+                        <p>Tab8</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab9">
+                        <p>Tab9</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab10">
+                        <p>Tab10</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab11">
+                        <p>Tab11</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab12">
+                        <p>Tab12</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab13">
+                        <p>Tab13</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab14">
+                        <p>Tab14</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab15">
+                        <p>Tab15</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab16">
+                        <p>Tab16</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab17">
+                        <p>Tab17</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab18">
+                        <p>Tab18</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab19">
+                        <p>Tab19</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab20">
+                        <p>Tab20</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab21">
+                        <p>Tab21</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab22">
+                        <p>Tab22</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab23">
+                        <p>Tab23</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab24">
+                        <p>Tab24</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab25">
+                        <p>Tab25</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab26">
+                        <p>Tab26</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

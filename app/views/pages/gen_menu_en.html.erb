@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Help Switchboard</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+
+  <%= render "partials/userinfo" %>
+  <%= render "partials/navbar" %>
+
+  <div>
+    <h1 class="text-center">3.6: Genealogy Research Menu<br><small>Menú Genealogía de Investigación</small></h1>
+    
+  </div>
+
+  <div id="main-content">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 text-center">
+          <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 75%;" />
+          <p>These records can be used to list ancestors who have entries in these locations and/or sources.</p>
+          <hr style="height: 2px; background-color:#555; margin-top: 10px; margin-bottom: 20px; width: 75%;" />
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+  </div>
+
+  <div id="main-content">
+	 <div class="row">
+      <div class="col-md-4">
+      </div>
+
+    	<div class="col-md-4">
+                  <ul class="list-unstyled text-center"> 
+                    <li>3.6.1: <u>Places (Lugares)</u></li> 
+                    <li><a href="research-journal.html">&nbsp&nbsp&nbsp3.6.1.1: Countries (Países)</a></li> 
+                    <li><a href="sources-menu.html">&nbsp&nbsp&nbsp3.6.1.2: States (Unidos)</a></li> 
+                    <li><a href="gen-attachments.html">&nbsp&nbsp&nbsp3.6.1.3: Counties (Condados)</a></li>
+                    <li><a href="gen-reports.html">&nbsp&nbsp&nbsp3.6.1.4: Cities/Townships (Ciudades)</a></li>
+                    <li><a href="gen-reports.html">&nbsp&nbsp&nbsp3.6.1.5: Courthouses (Juzgados)</a></li>
+                    <li><a href="gen-reports.html">&nbsp&nbsp&nbsp3.6.1.6: Parishes (Parroquias)</a></li>
+                    <li><a href="gen-reports.html">&nbsp&nbsp&nbsp3.6.1.7: Cemeteries (Cementerios)</a></li>
+                    <br>
+                    <li>3.6.2: <u>Sources (Fuentes)</u></li>
+                    <li><a href="gen-reports.html">&nbsp&nbsp&nbsp3.6.2.1: US Census (Censo de los EE.UU.)</a></li>
+                  </ul>
+
+      </div>
+
+      <div class="col-md-4">
+      </div>      
+    </div>
+  </div>
+ <%= render "partials/footer" %>
+</body>
+</html>
